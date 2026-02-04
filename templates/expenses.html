@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expenses | Business Management System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  {% include 'navbar.html' %}
+
+  <div class="container">
+    <h1>Expenses Management</h1>
+
+    <p>
+      Record business expenses and view all expenses below.
+    </p>
+
+    <hr>
+
+    <h3>Add Expense</h3>
+
+    <form method="POST" action="/expenses">
+      <label>Expense Title</label>
+      <input type="text" name="title" required>
+
+      <label>Amount</label>
+      <input type="number" step="0.01" name="amount" required>
+
+      <button type="submit">Add Expense</button>
+    </form>
+
+    {% if message %}
+      <p class="success">{{ message }}</p>
+    {% endif %}
+
+    <hr>
+
+    <h3>Expense List</h3>
+
+    {% if expenses %}
+      <table>
+        <tr>
+          <th>Title</th>
+          <th>Amount</th>
+        </tr>
+
+        {% for e in expenses %}
+        <tr>
+          <td>{{ e.title }}</td>
+          <td>{{ e.amount }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    {% else %}
+      <p>No expenses recorded yet.</p>
+    {% endif %}
+  </div>
+
+</body>
+</html>

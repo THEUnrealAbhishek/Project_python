@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reports | Business Management System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  {% include 'navbar.html' %}
+
+  <div class="container">
+    <h1>Business Reports</h1>
+
+    <p>
+      This report summarizes the overall business performance based on
+      recorded sales and expenses.
+    </p>
+
+    <hr>
+
+    <h3>Sales Summary</h3>
+    <p>
+      Total Sales Amount:
+      <strong>{{ total_sales }}</strong>
+    </p>
+
+    <hr>
+
+    <h3>Expense Summary</h3>
+    <p>
+      Total Expenses:
+      <strong>{{ total_expenses }}</strong>
+    </p>
+
+    <hr>
+
+    <h3>Profit / Loss</h3>
+    <p>
+      Net Profit / Loss:
+      <strong>{{ profit }}</strong>
+    </p>
+
+    <hr>
+
+    <p>
+      This information helps the business owner understand revenue,
+      spending, and overall profitability.
+    </p>
+  </div>
+
+</body>
+</html>

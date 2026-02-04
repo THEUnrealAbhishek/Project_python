@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Billing | Business Management System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  {% include 'navbar.html' %}
+
+  <div class="container">
+    <h1>Billing</h1>
+
+    <p>
+      Generate a bill by selecting a product and entering the quantity sold.
+    </p>
+
+    <hr>
+
+    <h3>Create Bill</h3>
+
+    <form method="POST" action="/billing">
+
+      <label>Select Product</label>
+      <select name="product" required>
+        {% for p in products %}
+          <option value="{{ p.name }}">{{ p.name }}</option>
+        {% endfor %}
+      </select>
+
+      <label>Quantity Sold</label>
+      <input type="number" name="quantity" required>
+
+      <button type="submit">Generate Bill</button>
+    </form>
+
+    {% if message %}
+      <p class="success">{{ message }}</p>
+    {% endif %}
+
+    <hr>
+
+    <p>
+      After generating a bill, the product stock will be updated automatically
+      and the sale will be recorded for reporting.
+    </p>
+  </div>
+
+</body>
+</html>

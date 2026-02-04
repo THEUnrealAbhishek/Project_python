@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard | Business Management System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  {% include 'navbar.html' %}
+
+  <div class="container">
+    <h1>Business Dashboard</h1>
+
+    <p>
+      Welcome to your business dashboard. From here you can manage
+      products, generate bills, track expenses, and view business reports.
+    </p>
+
+    <hr>
+
+    <h3>Quick Actions</h3>
+
+    <ul>
+      <li><a href="/products">Add / View Products</a></li>
+      <li><a href="/billing">Generate Bill</a></li>
+      <li><a href="/expenses">Add Expenses</a></li>
+      <li><a href="/reports">View Reports</a></li>
+    </ul>
+
+    <hr>
+
+    <p>
+      Use the navigation menu above to move between different
+      sections of the system.
+    </p>
+  </div>
+
+</body>
+</html>

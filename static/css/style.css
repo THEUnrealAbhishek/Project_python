@@ -1,0 +1,179 @@
+/* =========================
+   GLOBAL RESET & BASE
+   ========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+nav {
+  background-color: #1f2937;
+  padding: 14px 24px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 18px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   PAGE CONTAINER
+   ========================= */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   HEADINGS & TEXT
+   ========================= */
+h1 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  font-size: 18px;
+  color: #444;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* =========================
+   LISTS (DASHBOARD)
+   ========================= */
+ul {
+  margin-left: 18px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   FORMS
+   ========================= */
+form {
+  margin-top: 10px;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 9px 10px;
+  margin-bottom: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+button {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* =========================
+   TABLES
+   ========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+/* =========================
+   MESSAGES
+   ========================= */
+.success {
+  color: #166534;
+  background-color: #dcfce7;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.error {
+  color: #7f1d1d;
+  background-color: #fee2e2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* =========================
+   LINKS
+   ========================= */
+a {
+  color: #2563eb;
+}
+
+a:hover {
+  color: #1d4ed8;
+}
