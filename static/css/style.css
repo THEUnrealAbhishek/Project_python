@@ -33,11 +33,11 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
-  line-height: 1.6;
-}
+  font-family "Segoe UI", Arial, sans-serif;
+  background-color #f4f6f8;
+  color #333;
+  line-height 1.6;
+
 
 /* =========================
    NAVBAR
